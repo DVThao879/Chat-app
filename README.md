@@ -14,7 +14,10 @@
 - npm install
 ### Chạy lệnh dưới để tạo file .env:
 - cp .env.example .env
+### Tạo một APP_KEY mới cho dự án:
+- php artisan key:generate
 ### Chuyển sang kết nối csdl sqlite rồi chạy các lệnh:
+- Thay phần kết nối csdl thành DB_CONNECTION=sqlite
 - php artisan migrate
 - php artisan db:seed
 ### Bắt đầu chạy tại local:
