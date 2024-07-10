@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +20,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::view('/users', 'users.showAll')->name('users.all');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::view('/users', 'users.showAll')->name('users.all');
+
+    Route::get('/chat', [App\Http\Controllers\ChatController::class, 'showChat'])->name('chat.show');
+    Route::post('/chat/message', [App\Http\Controllers\ChatController::class, 'messageReceived'])->name('chat.message');
+    Route::post('/chat/greet/{receiver}', [App\Http\Controllers\ChatController::class, 'greetReceived'])->name('chat.greet');
+});

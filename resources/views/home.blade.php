@@ -14,7 +14,11 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('Bạn đã đăng nhập thành công!') }}
+                    <div class="mt-4">
+                        <a href="{{ route('users.all') }}" class="btn btn-primary mr-2">Xem người dùng</a>
+                        <a href="{{ route('chat.show') }}" class="btn btn-primary">Vào phòng Chat</a>
+                    </div>
                 </div>
             </div>
         </div>

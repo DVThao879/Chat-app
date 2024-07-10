@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container">
+    <a href="{{ route('home') }}" class="btn btn-primary mb-2">Về home</a>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
