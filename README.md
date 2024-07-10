@@ -9,17 +9,17 @@
 
 ## Hướng dẫn setup
 
-Sau khi clone code về. Chạy các lệnh:
+## Sau khi clone code về. Chạy các lệnh:
 - composer install
 - npm install
-Chuyển sang kết nối csdl sqlite rồi chạy các lệnh:
+## Chuyển sang kết nối csdl sqlite rồi chạy các lệnh:
 - php artisan migrate
 - php artisan db:seed
-Bắt đầu chạy tại local:
+## Bắt đầu chạy tại local:
 - Để call laravel serve, chạy: php artisan serve
 - Để css, js được hoạt động, chạy: npm run dev
-Truy cập vào https://pusher.com/. Tạo tài khoản và chèn thông tin Pusher vào file .env
-PUSHER_APP_ID=
-PUSHER_APP_KEY=
-PUSHER_APP_SECRET=
-PUSHER_APP_CLUSTER=
+## Truy cập vào https://pusher.com/. Tạo tài khoản và chèn thông tin Pusher vào file .env
+- PUSHER_APP_ID=
+- PUSHER_APP_KEY=
+- PUSHER_APP_SECRET=
+- PUSHER_APP_CLUSTER=
