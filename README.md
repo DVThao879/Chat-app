@@ -9,7 +9,7 @@
 
 ## Hướng dẫn setup
 
-## Sau khi clone code về. Chạy các lệnh:
+### Sau khi clone code về. Chạy các lệnh:
 - composer install
 - npm install
 ## Chuyển sang kết nối csdl sqlite rồi chạy các lệnh:
