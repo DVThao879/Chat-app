@@ -12,6 +12,8 @@
 ### Sau khi clone code về. Chạy các lệnh:
 - composer install
 - npm install
+### Chạy lệnh dưới để tạo file .env:
+- cp .env.example .env
 ### Chuyển sang kết nối csdl sqlite rồi chạy các lệnh:
 - php artisan migrate
 - php artisan db:seed
